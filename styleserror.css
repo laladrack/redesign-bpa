@@ -12,8 +12,7 @@ html, body{
 body{
     font-family: 'Open Sans';
     font-size: 14px;
-    background: rgb(0,36,211);
-    background: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
+    background-color: white;
     display: flex;
 }
 
@@ -81,67 +80,48 @@ body{
 
 /* main div */
 .main-div{
-    background-color: white;
-    padding: 32px 32px 0 32px;
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    height: fit-content;
-    max-width: 900px;
-}
-
-.main-div img{
-    align-self: center;
-    max-width: 450px;
-    height: auto;
-}
-
-h1 {
-    align-self: center;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer{
     font-size: 11px;
     align-self: center;
     justify-content: flex-end;
+    padding: 16px;
 }
 
-.color-wrap{
-    display: flex;
-    gap: 8px;
-    padding-top: 16px;
-    flex-wrap: wrap;
+/*error*/
+
+h1 {
+    align-self: center;
+    margin: 0;
+    font-size: 40px;
 }
 
-#blue{
-    background-color: #00A9EB;
-}
-#red{
-    background-color: #F06473;
-}
-#yellow{
-    background-color: #FED34C;
-}
-#orange{
-    background-color: #F58C35;
-}
-#cyan{
-    background-color: #00A8BF;
-}
-#green{
-    background-color: #00B48F;
+p{
+    align-self: center;
+    font-size: 22px;
 }
 
-#blue, #red, #yellow, #orange, #cyan, #green{
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#BPA_OldLogo{
+    max-width: 250px;
+    align-self: center;
+    padding: 8px;
+}
+
+button{
+    background-color: rgba(0,36,211,1);
+    border: none;
+    color: white;
+    align-self: center;
+    width: 425px;
+    height: 50px;
+    border-radius: 20px;
     flex: 1 1 auto;
-    border-radius: 10px;
+    cursor: pointer;
 }
 
 a:hover{
