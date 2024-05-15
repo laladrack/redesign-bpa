@@ -45,7 +45,7 @@ body{
 }
 
 #BPA-newlogo:hover{
-    filter: hue-rotate(90deg) saturate(500%) invert(75%);
+    filter: sepia(100%) hue-rotate(225deg) saturate(5000%) invert(80%);
 }
 
 header{
