@@ -12,8 +12,9 @@ html, body{
 body{
     font-family: 'Open Sans';
     font-size: 14px;
-    background: rgb(0,36,211);
-    background: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
+    background-image: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
+    background-color: rgba(0,36,211,1);
+    background-repeat: no-repeat;
     display: flex;
 }
 
@@ -43,6 +44,10 @@ body{
     margin: 0;
 }
 
+#BPA-newlogo:hover{
+    filter: hue-rotate(90deg) saturate(500%) invert(75%);
+}
+
 header{
     width: 100%;
 }
@@ -59,6 +64,11 @@ header{
     vertical-align: middle;
     border: solid 1px #00A9EB;
 }
+
+#avatar:hover{
+    filter: sepia(100%) hue-rotate(90deg) saturate(1500%) invert(100%);
+}
+
 #forvia-logo{
     max-width: 125px;
     vertical-align: middle;
@@ -98,7 +108,7 @@ header{
 }
 
 #forvia-logo:hover{
-    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+    filter: sepia(500%) hue-rotate(90deg) saturate(1500%) invert(25%);
 }
 
 
@@ -112,6 +122,8 @@ header{
     border-radius: 15px;
     height: fit-content;
     max-width: 900px;
+    -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17); 
+box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
 }
 
 .main-div img{
@@ -123,6 +135,11 @@ header{
 h1 {
     align-self: center;
     margin: 0;
+}
+h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
 }
 
 #footer{
@@ -136,6 +153,12 @@ h1 {
     gap: 8px;
     padding-top: 16px;
     flex-wrap: wrap;
+}
+
+#blue > p, #red > p, #yellow > p, #orange > p, #cyan > p, #green > p{
+    max-width: 225px;
+    margin: 0;
+    font-weight: 400;
 }
 
 #blue{
@@ -165,6 +188,9 @@ h1 {
     align-items: center;
     flex: 1 1 auto;
     border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17); 
+    box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
 }
 
 a:hover{
