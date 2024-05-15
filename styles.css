@@ -43,6 +43,16 @@ body{
     margin: 0;
 }
 
+header{
+    width: 100%;
+}
+
+#sales:hover, #Purchasing:hover, #Logistics:hover, #Finances:hover, #Projects:hover, #Workflow:hover, #Suppliers:hover{
+    cursor: pointer;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    color: #00A9EB;
+}
+
 #avatar{
     max-width: 45px;
     border-radius: 50%;
@@ -53,9 +63,13 @@ body{
     max-width: 125px;
     vertical-align: middle;
 }
-#checkdown{
+.checkdown{
     vertical-align: middle;
     filter: invert(100%);
+}
+
+.checkdown:hover{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
 .select-wrap{
@@ -78,18 +92,26 @@ body{
     vertical-align: middle;
 }
 
+.user:hover, #avatar:hover, #forvia-logo:hover{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    cursor: pointer;
+}
+
+#forvia-logo:hover{
+    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+}
+
 
 /* main div */
 .main-div{
     background-color: white;
     padding: 16px 32px 0 32px;
-    margin-top: 0;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     height: fit-content;
     max-width: 900px;
-    scale: 90%;
 }
 
 .main-div img{
