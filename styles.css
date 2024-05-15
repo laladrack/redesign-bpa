@@ -63,19 +63,25 @@ header{
     border-radius: 50%;
     vertical-align: middle;
     border: solid 1px #00A9EB;
+    margin: 0;
+    padding: 0;
 }
 
 #avatar:hover{
     filter: sepia(100%) hue-rotate(90deg) saturate(1500%) invert(100%);
+    border: solid 1.5px #00A9EB;
 }
 
 #forvia-logo{
     max-width: 125px;
     vertical-align: middle;
+    margin-right: 0;
+    padding: 0;
 }
 .checkdown{
     vertical-align: middle;
     filter: invert(100%);
+    margin-left: 0;
 }
 
 .checkdown:hover{
