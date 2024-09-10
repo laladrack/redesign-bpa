@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root{
+    --azul-forvia: rgba(0,36,211,1);
+    --azul-claro: #00A9EB;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +15,8 @@
 body{
     min-height: 100vh;
     font-size: 14px;
-    background-image: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
-    background-color: rgba(0,36,211,1);
+    background-image: linear-gradient(0deg, var(--azul-forvia) 35%, var(--azul-claro) 100%);
+    background-color: var(--azul-forvia);
     background-repeat: no-repeat;
     display: flex;
     position: relative;
@@ -26,7 +31,7 @@ header{
     width: 100%;
     min-height: 60px;
     max-height: 75px;
-    background: rgba(0,36,211,1);
+    background: var(--azul-forvia);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,7 +64,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background-color: rgba(0,36,211,1);
+    background-color: var(--azul-forvia);
     position: relative;
 }
 
