@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* main */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+body{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    background-image: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
+    background-color: rgba(0,36,211,1);
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* top navegation 
+.top-nav{
+    margin-top: 0;
+    background-color: rgba(0,36,211,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 70px;
+    font-size: 15px;
+}
+
+#BPA-newlogo{
+    filter: invert(100%);
+    max-width: 225px;
+    padding: 0;
+    margin: 0;
+}
+
+#BPA-newlogo:hover{
+    filter: sepia(100%) hue-rotate(225deg) saturate(5000%) invert(80%);
+}
+
+header{
+    width: 100%;
+}
+
+#sales:hover, #Purchasing:hover, #Logistics:hover, #Finances:hover, #Projects:hover, #Workflow:hover, #Suppliers:hover{
+    cursor: pointer;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    color: #00A9EB;
+}
+
+#avatar{
+    max-width: 45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: solid 1px #00A9EB;
+    margin: 0;
+    padding: 0;
+}
+
+#avatar:hover{
+    filter: sepia(100%) hue-rotate(90deg) saturate(1500%) invert(100%);
+    border: solid 1.5px #00A9EB;
+}
+
+#forvia-logo{
+    max-width: 125px;
+    vertical-align: middle;
+    margin-right: 0;
+    padding: 0;
+}
+.checkdown{
+    vertical-align: middle;
+    filter: invert(100%);
+    margin-left: 0;
+}
+
+.checkdown:hover{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.select-wrap{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    gap: 16px;
+}
+
+.select-wrap a{
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.select-wrap img{
+    filter: invert(100%);
+    vertical-align: middle;
+}
+
+.user:hover, #avatar:hover, #forvia-logo:hover{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    cursor: pointer;
+}
+
+#forvia-logo:hover{
+    filter: sepia(500%) hue-rotate(90deg) saturate(1500%) invert(25%);
+}
+*/
+
+/* main div */
+.main-div{
+    background-color: white;
+    padding: 16px 32px 0 32px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: fit-content;
+    max-width: 900px;
+    -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17); 
+box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
+}
+
+.main-div img{
+    align-self: center;
+    max-width: 450px;
+    height: auto;
+}
+
+h1 {
+    align-self: center;
+    margin: 0;
+}
+h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+#footer{
+    font-size: 11px;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.color-wrap{
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    flex-wrap: wrap;
+}
+
+#blue > p, #red > p, #yellow > p, #orange > p, #cyan > p, #green > p{
+    max-width: 225px;
+    margin: 0;
+    font-weight: 400;
+}
+
+#blue{
+    background-color: #00A9EB;
+}
+#red{
+    background-color: #F06473;
+}
+#yellow{
+    background-color: #FED34C;
+}
+#orange{
+    background-color: #F58C35;
+}
+#cyan{
+    background-color: #00A8BF;
+}
+#green{
+    background-color: #00B48F;
+}
+
+#blue, #red, #yellow, #orange, #cyan, #green{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17); 
+    box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
+}
+
+#blue:hover, #red:hover, #yellow:hover, #orange:hover, #cyan:hover, #green:hover{
+    width: 255px;
+    height: 155px;
+    -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.26); 
+box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.26);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* new navbar */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.select-wrap{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+nav{
+    margin-top: 0;
+    background-color: rgba(0,36,211,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 70px;
+    font-size: 15px;
+    gap: 8px;
+    color: white;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#BPA-newlogo{
+    filter: invert(100%);
+    max-width: 225px;
+    padding: 0;
+    margin: 0;
+}
+
+h4{
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+h4:hover{
+    cursor: pointer;
+    font-weight: 500;
+    color:#00A9EB;
+}
+
+
+/* sales */
+.sales-div{
+    display: flex;
+    width: fit-content;
+    height: 60px;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.sales-div:hover{
+    background-color: white;
+    color:#00A9EB;
+}
+
+#sales{
+    display: none;
+}
+
+.links-sales{
+    display: none;
+    border-top: 3px solid #00A9EB;
+    padding: 10px;
+    background-color: rgba(0,36,211,1);
+}
+
+#sales:checked ~ .sales-div{
+    background-color: white;
+}
+
+#sales:checked ~ .links-sales{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: fit-content;
+    width: auto;
+    gap: 16px;
+    bottom: 72%;
+}
+
+.links-sales a:hover{
+    color:#00A9EB;
+    background-color: white;
+}
+
+/* purchasing */
+.purchasing-div{
+    display: flex;
+    width: fit-content;
+    height: 60px;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.purchasing-div:hover{
+    background-color: white;
+    color:#00A9EB;
+}
+
+#purchasing{
+    display: none;
+}
+
+.links-purchasing{
+    display: none;
+    border-top: 3px solid #00A9EB;
+    padding: 10px;
+    background-color: rgba(0,36,211,1);
+}
+
+#purchasing:checked ~ .purchasing-div{
+    background-color: white;
+}
+
+#purchasing:checked ~ .links-purchasing{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: fit-content;
+    width: auto;
+    gap: 16px;
+    bottom: 72%;
+}
+
+.links-purchasing a:hover{
+    color:#00A9EB;
+    background-color: white;
+}

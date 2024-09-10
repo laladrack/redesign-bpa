@@ -1,135 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* main */
-html, body{
-    height: 100%;
-    width: 100%;
+*{
     margin: 0;
     padding: 0;
-    display: flex;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Open Sans';
+    min-height: 100vh;
     font-size: 14px;
     background-image: linear-gradient(0deg, rgba(0,36,211,1) 35%, rgba(0,169,235,1) 100%);
     background-color: rgba(0,36,211,1);
     background-repeat: no-repeat;
     display: flex;
+    position: relative;
 }
 
 .main-body{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-/* top navegation */
-.top-nav{
-    margin-top: 0;
-    background-color: rgba(0,36,211,1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-height: 70px;
-    font-size: 15px;
-}
-
-#BPA-newlogo{
-    filter: invert(100%);
-    max-width: 225px;
-    padding: 0;
-    margin: 0;
-}
-
-#BPA-newlogo:hover{
-    filter: sepia(100%) hue-rotate(225deg) saturate(5000%) invert(80%);
 }
 
 header{
+    position: absolute;
     width: 100%;
+    min-height: 60px;
+    max-height: 75px;
+    background: rgba(0,36,211,1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#sales:hover, #Purchasing:hover, #Logistics:hover, #Finances:hover, #Projects:hover, #Workflow:hover, #Suppliers:hover{
-    cursor: pointer;
-    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-    color: #00A9EB;
+header #BPA-newlogo{
+    max-width: 225px;
+    height: auto;
+    padding: 0;
+    filter:invert(98%);
 }
 
-#avatar{
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a{
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li a:hover{
+background-color: rgba(0,36,211,1);
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background-color: rgb(11, 28, 114);
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(6, 19, 83);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+.user img{
+    max-width: 100px;
+}
+.user #avatar{
     max-width: 45px;
     border-radius: 50%;
-    vertical-align: middle;
-    border: solid 1px #00A9EB;
-    margin: 0;
-    padding: 0;
 }
-
-#avatar:hover{
-    filter: sepia(100%) hue-rotate(90deg) saturate(1500%) invert(100%);
-    border: solid 1.5px #00A9EB;
-}
-
-#forvia-logo{
-    max-width: 125px;
-    vertical-align: middle;
-    margin-right: 0;
-    padding: 0;
-}
-.checkdown{
-    vertical-align: middle;
-    filter: invert(100%);
-    margin-left: 0;
-}
-
-.checkdown:hover{
-    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-}
-
-.select-wrap{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    gap: 16px;
-}
-
-.select-wrap a{
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.select-wrap img{
-    filter: invert(100%);
-    vertical-align: middle;
-}
-
-.user:hover, #avatar:hover, #forvia-logo:hover{
-    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-    cursor: pointer;
-}
-
-#forvia-logo:hover{
-    filter: sepia(500%) hue-rotate(90deg) saturate(1500%) invert(25%);
-}
-
 
 /* main div */
+
 .main-div{
-    background-color: white;
-    padding: 16px 32px 0 32px;
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
+    padding: 16px 32px 8px 32px;
     border-radius: 15px;
     height: fit-content;
-    max-width: 900px;
+    max-width: 850px;
+    margin: auto;
+
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
     -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17); 
-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
+    box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.17);
 }
 
 .main-div img{
@@ -152,6 +134,8 @@ h3{
     font-size: 11px;
     align-self: center;
     justify-content: flex-end;
+    margin: 4px 0 0 0;
+    padding: 2px;
 }
 
 .color-wrap{
@@ -189,6 +173,7 @@ h3{
 #blue, #red, #yellow, #orange, #cyan, #green{
     width: 250px;
     height: 150px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,8 +185,8 @@ h3{
 }
 
 #blue:hover, #red:hover, #yellow:hover, #orange:hover, #cyan:hover, #green:hover{
-    width: 255px;
-    height: 155px;
+    width: 251px;
+    height: 151px;
     -webkit-box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.26); 
 box-shadow: 4px 7px 8px 0px rgba(0,0,0,0.26);
 }
