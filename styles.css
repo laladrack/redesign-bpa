@@ -57,8 +57,10 @@ header ul li a{
     display: flex;
     justify-content: space-between;
 }
+
 header ul li a:hover{
-background-color: rgba(0,36,211,1);
+    background-color: rgba(0,36,211,1);
+    position: relative;
 }
 
 header ul li ul{
@@ -71,6 +73,7 @@ header ul li ul{
 
 header ul li:hover ul{
     display: block;
+    z-index: 1;
 }
 
 header ul li ul li{
